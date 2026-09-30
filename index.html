@@ -2,9 +2,109 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商船祭2026 | 弓削商船高等専門学校 学園祭</title>
+  <meta name="description" content="弓削商船高等専門学校の学園祭「商船祭2026」の公式ウェブページ。">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
+  <header class="site-header">
+    <a class="logo" href="#top">商船祭<span>2026</span></a>
+    <button class="menu-btn" aria-label="メニュー" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#about">商船祭とは</a>
+      <a href="#schedule">スケジュール</a>
+      <a href="#events">企画</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="waves" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">弓削商船高等専門学校 学園祭</p>
+        <h1>商船祭<span>2026</span></h1>
+        <p class="theme">テーマ:<strong>（テーマ未定）</strong></p>
+        <p class="date">開催日:<strong id="event-date-label">20XX年X月X日(X)〜X日(X)</strong></p>
+        <div class="countdown" id="countdown" data-date="2026-11-01T09:00:00+09:00" hidden>
+          <div><b id="cd-d">0</b><small>日</small></div>
+          <div><b id="cd-h">0</b><small>時間</small></div>
+          <div><b id="cd-m">0</b><small>分</small></div>
+          <div><b id="cd-s">0</b><small>秒</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>商船祭とは</h2>
+      <p>商船祭は、瀬戸内海に浮かぶ弓削島にある弓削商船高等専門学校の学園祭です。学生が主役となって、展示・模擬店・ステージ発表など、この学校ならではの企画をお届けします。</p>
+      <p class="note">※ 紹介文は仮のものです。実行委員会の言葉に差し替えてください。</p>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <h2>スケジュール</h2>
+      <div class="cards two">
+        <article class="card">
+          <h3>1日目</h3>
+          <ul class="timeline">
+            <li><time>09:00</time>開会式</li>
+            <li><time>10:00</time>模擬店・展示オープン</li>
+            <li><time>13:00</time>ステージ企画</li>
+            <li><time>17:00</time>1日目終了</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>2日目</h3>
+          <ul class="timeline">
+            <li><time>09:30</time>模擬店・展示オープン</li>
+            <li><time>13:00</time>ステージ企画</li>
+            <li><time>16:00</time>閉会式</li>
+            <li><time>17:00</time>後夜祭</li>
+          </ul>
+        </article>
+      </div>
+      <p class="note">※ 時間はすべて仮です。</p>
+    </section>
+
+    <section id="events" class="section">
+      <h2>企画紹介</h2>
+      <div class="cards three">
+        <article class="card"><h3>🍜 模擬店</h3><p>各クラス・部活動による飲食の出店。</p></article>
+        <article class="card"><h3>🔬 展示</h3><p>研究・制作物の展示や体験コーナー。</p></article>
+        <article class="card"><h3>🎤 ステージ</h3><p>バンド、ダンス、有志によるパフォーマンス。</p></article>
+        <article class="card"><h3>⚓ 商船学科企画</h3><p>船にまつわる体験企画。</p></article>
+        <article class="card"><h3>💻 情報・電子系企画</h3><p>ものづくり・プログラミング体験。</p></article>
+        <article class="card"><h3>🎆 後夜祭</h3><p>祭りの締めくくりを全員で。</p></article>
+      </div>
+      <p class="note">※ 企画名・内容は仮です。</p>
+    </section>
+
+    <section id="access" class="section alt">
+      <h2>アクセス</h2>
+      <p><strong>弓削商船高等専門学校</strong><br>愛媛県越智郡上島町弓削下弓削1000番地</p>
+      <ul class="plain">
+        <li>弓削島へは、フェリーまたは旅客船でお越しください。</li>
+        <li>臨時便・時刻の情報は決まり次第掲載します。</li>
+      </ul>
+      <div class="map">
+        <iframe title="弓削商船高等専門学校の地図" loading="lazy"
+          src="https://maps.google.com/maps?q=%E5%BC%93%E5%89%8A%E5%95%86%E8%88%B9%E9%AB%98%E7%AD%89%E5%B0%82%E9%96%80%E5%AD%A6%E6%A0%A1&output=embed"></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>お問い合わせ</h2>
+      <p>商船祭実行委員会<br>メール:（未定）</p>
+      <p>最新情報は公式SNSでもお知らせします。（準備中）</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
