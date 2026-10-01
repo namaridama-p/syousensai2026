@@ -3,13 +3,15 @@
     "name": "（サンプル）ゲーム展示",
     "organization": "マイコン部",
     "category": "体験",
+    "club": true,
     "place": "情報工学科棟2F 情報処理演習室",
     "summary": "弓削商船のエースプログラマーが作った作品です。",
     "menu": [
-      { "name": "ゲームクレジット", "price": 100}
+      { "name": "ゲームクレジット", "price": 100},
+      { "name": "（サンプル）限定ステッカー", "price": 200, "soldOut": true }
     ],
     "allergens": "",
-    "image": "/../images/shops/micon.png",
+    "image": "images/shops/micon.png",
     "comment": "ぜひ遊びにきてください！"
   }
 ]

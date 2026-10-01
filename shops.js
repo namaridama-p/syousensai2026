@@ -27,8 +27,10 @@ function renderShop(s) {
   if (s.menu && s.menu.length) {
     const ul = el('ul', 'menu');
     s.menu.forEach(m => {
-      const li = el('li');
-      li.append(el('span', '', m.name + (m.note ? `（${m.note}）` : '')));
+      const li = el('li', m.soldOut ? 'sold-out' : '');
+      const name = el('span', 'item-name', m.name + (m.note ? `（${m.note}）` : ''));
+      if (m.soldOut) name.append(el('em', 'sold-badge', '売り切れ'));
+      li.append(name);
       li.append(el('b', '', m.price != null ? `${m.price}円` : ''));
       ul.append(li);
     });
@@ -40,6 +42,7 @@ function renderShop(s) {
 }
 
 function setupFilters(shops) {
+  if (!filtersEl) return;
   const cats = [...new Set(shops.map(s => s.category).filter(Boolean))];
   if (cats.length < 2) return;
   ['すべて', ...cats].forEach((c, i) => {
@@ -54,12 +57,30 @@ function setupFilters(shops) {
   });
 }
 
+const clubEl = document.getElementById('club-list');
+const CLUB_PICK_COUNT = 3; // トップページに表示する部活動の数
+
 fetch('data/shops.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(shops => {
-    listEl.replaceChildren(...shops.map(renderShop));
-    setupFilters(shops);
+    if (listEl) {
+      listEl.replaceChildren(...shops.map(renderShop));
+      setupFilters(shops);
+    }
+    if (clubEl) {
+      const clubs = shops.filter(s => s.club);
+      // ランダムに CLUB_PICK_COUNT 件だけ表示(Fisher-Yates シャッフル)
+      for (let i = clubs.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [clubs[i], clubs[j]] = [clubs[j], clubs[i]];
+      }
+      clubEl.replaceChildren(...(clubs.length
+        ? clubs.slice(0, CLUB_PICK_COUNT).map(renderShop)
+        : [el('p', '', '部活動の出展情報は準備中です。')]));
+    }
   })
   .catch(() => {
-    listEl.replaceChildren(el('p', '', '模擬店情報を読み込めませんでした。（data/shops.json の書き方を確認してください）'));
+    const msg = el('p', '', '出展情報を読み込めませんでした。（data/shops.json の書き方を確認してください）');
+    if (listEl) listEl.replaceChildren(msg);
+    if (clubEl) clubEl.replaceChildren(msg.cloneNode(true));
   });
