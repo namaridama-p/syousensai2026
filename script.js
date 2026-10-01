@@ -12,6 +12,7 @@ nav.addEventListener('click', () => {
 
 // カウントダウン(開催日は index.html の data-date で設定。日付確定後に hidden を外す)
 const cd = document.getElementById('countdown');
+if (cd) {
 const target = new Date(cd.dataset.date).getTime();
 function tick() {
   const diff = Math.max(0, target - Date.now());
@@ -23,3 +24,4 @@ function tick() {
 }
 tick();
 setInterval(tick, 1000);
+}

@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>商船祭2026 | 弓削商船高等専門学校 学園祭</title>
   <meta name="description" content="弓削商船高等専門学校の学園祭「商船祭2026」の公式ウェブページ。">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +17,8 @@
       <a href="#about">商船祭とは</a>
       <a href="#schedule">スケジュール</a>
       <a href="#events">企画</a>
+      <a href="#clubs">部活動出展</a>
+      <a href="shops.html">模擬店</a>
       <a href="#access">アクセス</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
@@ -27,8 +31,8 @@
         <p class="eyebrow">弓削商船高等専門学校 学園祭</p>
         <h1>商船祭<span>2026</span></h1>
         <p class="theme">テーマ:<strong>（テーマ未定）</strong></p>
-        <p class="date">開催日:<strong id="event-date-label">20XX年X月X日(X)〜X日(X)</strong></p>
-        <div class="countdown" id="countdown" data-date="2026-11-01T09:00:00+09:00" hidden>
+        <p class="date">開催日:<strong id="event-date-label">2026年11月7日(土) 10:00 〜 8日(日) 15:30</strong></p>
+        <div class="countdown" id="countdown" data-date="2026-11-07T10:00:00+09:00">
           <div><b id="cd-d">0</b><small>日</small></div>
           <div><b id="cd-h">0</b><small>時間</small></div>
           <div><b id="cd-m">0</b><small>分</small></div>
@@ -47,25 +51,21 @@
       <h2>スケジュール</h2>
       <div class="cards two">
         <article class="card">
-          <h3>1日目</h3>
+          <h3>1日目 11/7(土)</h3>
           <ul class="timeline">
-            <li><time>09:00</time>開会式</li>
-            <li><time>10:00</time>模擬店・展示オープン</li>
-            <li><time>13:00</time>ステージ企画</li>
-            <li><time>17:00</time>1日目終了</li>
+            <li><time>10:00</time>開催</li>
+            <li><time>--:--</time>（詳細未定）</li>
           </ul>
         </article>
         <article class="card">
-          <h3>2日目</h3>
+          <h3>2日目 11/8(日)</h3>
           <ul class="timeline">
-            <li><time>09:30</time>模擬店・展示オープン</li>
-            <li><time>13:00</time>ステージ企画</li>
-            <li><time>16:00</time>閉会式</li>
-            <li><time>17:00</time>後夜祭</li>
+            <li><time>--:--</time>（詳細未定）</li>
+            <li><time>15:30</time>終了</li>
           </ul>
         </article>
       </div>
-      <p class="note">※ 時間はすべて仮です。</p>
+      <p class="note">※ 開始・終了時刻以外の詳細は決まり次第掲載します。</p>
     </section>
 
     <section id="events" class="section">
@@ -73,12 +73,19 @@
       <div class="cards three">
         <article class="card"><h3>🍜 模擬店</h3><p>各クラス・部活動による飲食の出店。</p></article>
         <article class="card"><h3>🔬 展示</h3><p>研究・制作物の展示や体験コーナー。</p></article>
-        <article class="card"><h3>🎤 ステージ</h3><p>バンド、ダンス、有志によるパフォーマンス。</p></article>
+        <article class="card"><h3>🎤 ステージ</h3><p>バンド、有志によるパフォーマンス。</p></article>
         <article class="card"><h3>⚓ 商船学科企画</h3><p>船にまつわる体験企画。</p></article>
-        <article class="card"><h3>💻 情報・電子系企画</h3><p>ものづくり・プログラミング体験。</p></article>
-        <article class="card"><h3>🎆 後夜祭</h3><p>祭りの締めくくりを全員で。</p></article>
       </div>
       <p class="note">※ 企画名・内容は仮です。</p>
+    </section>
+
+    <section id="clubs" class="section">
+      <h2>部活動出展</h2>
+      <div class="cards three" id="club-list">
+        <p>読み込み中…</p>
+      </div>
+      <p class="more"><a class="btn" href="shops.html">もっとみる<span class="arrow" aria-hidden="true">→</span></a></p>
+      <p class="note">※ 表示される部活動は、ページを開くたびに入れ替わります。</p>
     </section>
 
     <section id="access" class="section alt">
@@ -86,7 +93,6 @@
       <p><strong>弓削商船高等専門学校</strong><br>愛媛県越智郡上島町弓削下弓削1000番地</p>
       <ul class="plain">
         <li>弓削島へは、フェリーまたは旅客船でお越しください。</li>
-        <li>臨時便・時刻の情報は決まり次第掲載します。</li>
       </ul>
       <div class="map">
         <iframe title="弓削商船高等専門学校の地図" loading="lazy"
@@ -103,8 +109,13 @@
 
   <footer class="site-footer">
     <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
+    <p class="credit">
+      Web制作：namaridama_p
+      <a class="x-link" href="https://x.com/namaridama_p" target="_blank" rel="noopener noreferrer" aria-label="制作者のX">𝕏</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="shops.js"></script>
 </body>
 </html>
