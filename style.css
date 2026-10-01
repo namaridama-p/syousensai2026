@@ -103,3 +103,27 @@ a { color: var(--blue); }
   .cards.two, .cards.three { grid-template-columns: 1fr; }
   .countdown div { min-width: 56px; padding: 6px 10px; }
 }
+
+/* 模擬店ページ */
+.page-top { padding-top: 56px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.filter {
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 999px; padding: 4px 14px; cursor: pointer; font: inherit;
+}
+.filter.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+.shop[hidden] { display: none; }
+.shop-img { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+.tag { display: inline-block; font-size: .75rem; background: var(--accent); color: #fff; border-radius: 4px; padding: 0 8px; }
+.shop .meta { font-size: .85rem; opacity: .75; }
+.shop .menu { list-style: none; padding: 0; margin: 10px 0; }
+.shop .menu li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px dashed var(--border); }
+.shop .comment { margin-top: 10px; font-style: italic; }
+
+/* クレジット */
+.site-footer .credit { margin-top: 8px; font-size: .75rem; opacity: .75; }
+
+/* Xリンク */
+.x-link { font-weight: 700; text-decoration: none; color: inherit; margin-left: .4em; }
+.x-link:hover { text-decoration: underline; }
+
