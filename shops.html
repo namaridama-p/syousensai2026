@@ -4,27 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>模擬店一覧 | 商船祭2026</title>
+  <meta name="description" content="商船祭2026の模擬店・出展の一覧。メニューや価格、場所を掲載しています。">
+  <meta name="theme-color" content="#121416">
+  <meta name="color-scheme" content="dark">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
-<body>
+<body class="subpage">
+  <a class="skip" href="#shops">本文へスキップ</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html">商船祭<span>2026</span></a>
-    <button class="menu-btn" aria-label="メニュー" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="index.html#about">商船祭とは</a>
-      <a href="index.html#schedule">スケジュール</a>
-      <a href="index.html#events">企画</a>
-      <a href="shops.html">模擬店</a>
-      <a href="index.html#access">アクセス</a>
-      <a href="index.html#contact">お問い合わせ</a>
+    <a class="logo" href="index.html" aria-label="商船祭2026 トップへ">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12.00,0.50 12.92,9.78 16.95,7.05 14.22,11.08 23.50,12.00 14.22,12.92 16.95,16.95 12.92,14.22 12.00,23.50 11.08,14.22 7.05,16.95 9.78,12.92 0.50,12.00 9.78,11.08 7.05,7.05 11.08,9.78"/></svg>
+      <span class="logo-text">商船祭<span>2026</span></span>
+    </a>
+    <button class="menu-btn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span><span></span></button>
+    <nav class="nav" id="global-nav" aria-label="サイト内">
+      <a href="index.html#about"><span class="en" aria-hidden="true">About</span>商船祭とは</a>
+      <a href="index.html#schedule"><span class="en" aria-hidden="true">Schedule</span>スケジュール</a>
+      <a href="index.html#events"><span class="en" aria-hidden="true">Program</span>企画</a>
+      <a href="index.html#clubs"><span class="en" aria-hidden="true">Clubs</span>部活動出展</a>
+      <a href="shops.html" aria-current="page"><span class="en" aria-hidden="true">Shops</span>模擬店</a>
+      <a href="index.html#access"><span class="en" aria-hidden="true">Access</span>アクセス</a>
+      <a href="index.html#contact"><span class="en" aria-hidden="true">Contact</span>お問い合わせ</a>
     </nav>
   </header>
 
   <main class="page-top">
-    <section class="section">
-      <h2>模擬店一覧</h2>
+    <section class="section" id="shops">
+      <header class="section-head">
+        <p class="section-no">—</p>
+        <p class="section-en">Shops</p>
+        <h1 class="page-title">模擬店一覧</h1>
+      </header>
       <div class="filters" id="filters"></div>
       <div class="cards three" id="shop-list">
         <p>読み込み中…</p>
@@ -33,11 +49,20 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
-    <p class="credit">
-      Web制作：namaridama_p
-      <a class="x-link" href="https://x.com/namaridama_p" target="_blank" rel="noopener noreferrer" aria-label="制作者のX">𝕏</a>
-    </p>
+    <div class="footer-inner">
+      <p class="footer-mark" aria-hidden="true">
+        <svg class="mark" viewBox="0 0 24 24"><polygon points="12.00,0.50 12.92,9.78 16.95,7.05 14.22,11.08 23.50,12.00 14.22,12.92 16.95,16.95 12.92,14.22 12.00,23.50 11.08,14.22 7.05,16.95 9.78,12.92 0.50,12.00 9.78,11.08 7.05,7.05 11.08,9.78"/></svg>
+        Shosen-sai 2026
+      </p>
+      <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
+      <p class="credit">
+        Web制作：namaridama_p
+        <a class="x-link" href="https://x.com/namaridama_p" target="_blank" rel="noopener noreferrer" aria-label="namaridama_pのX">𝕏</a>
+        <span class="credit-sep" aria-hidden="true">/</span>
+        t_okugawa
+        <a class="x-link" href="https://x.com/toma_okugawa" target="_blank" rel="noopener noreferrer" aria-label="t_okugawaのX">𝕏</a>
+      </p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
