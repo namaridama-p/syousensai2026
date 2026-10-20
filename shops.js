@@ -17,13 +17,15 @@ function renderShop(s) {
     img.src = s.image;
     img.alt = s.name;
     img.loading = 'lazy';
+    img.decoding = 'async';
     card.append(img);
   }
-  if (s.category) card.append(el('span', 'tag', s.category));
-  card.append(el('h3', '', s.name));
+  const body = el('div', 'shop-body');
+  if (s.category) body.append(el('span', 'tag', s.category));
+  body.append(el('h3', '', s.name));
   const meta = [s.organization, s.place].filter(Boolean).join(' / ');
-  if (meta) card.append(el('p', 'meta', meta));
-  if (s.summary) card.append(el('p', '', s.summary));
+  if (meta) body.append(el('p', 'meta', meta));
+  if (s.summary) body.append(el('p', '', s.summary));
   if (s.menu && s.menu.length) {
     const ul = el('ul', 'menu');
     s.menu.forEach(m => {
@@ -31,13 +33,14 @@ function renderShop(s) {
       const name = el('span', 'item-name', m.name + (m.note ? `（${m.note}）` : ''));
       if (m.soldOut) name.append(el('em', 'sold-badge', '売り切れ'));
       li.append(name);
-      li.append(el('b', '', m.price != null ? `${m.price}円` : ''));
+      li.append(el('b', '', m.price != null ? `${Number(m.price).toLocaleString('ja-JP')}円` : ''));
       ul.append(li);
     });
-    card.append(ul);
+    body.append(ul);
   }
-  if (s.allergens) card.append(el('p', 'note', `アレルギー: ${s.allergens}`));
-  if (s.comment) card.append(el('p', 'comment', s.comment));
+  if (s.allergens) body.append(el('p', 'note', `アレルギー: ${s.allergens}`));
+  if (s.comment) body.append(el('p', 'comment', s.comment));
+  card.append(body);
   return card;
 }
 
@@ -45,10 +48,18 @@ function setupFilters(shops) {
   if (!filtersEl) return;
   const cats = [...new Set(shops.map(s => s.category).filter(Boolean))];
   if (cats.length < 2) return;
+  filtersEl.setAttribute('role', 'group');
+  filtersEl.setAttribute('aria-label', 'カテゴリで絞り込み');
   ['すべて', ...cats].forEach((c, i) => {
     const b = el('button', 'filter' + (i === 0 ? ' active' : ''), c);
+    b.type = 'button';
+    b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
     b.addEventListener('click', () => {
-      filtersEl.querySelectorAll('.filter').forEach(x => x.classList.toggle('active', x === b));
+      filtersEl.querySelectorAll('.filter').forEach(x => {
+        const on = x === b;
+        x.classList.toggle('active', on);
+        x.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
       listEl.querySelectorAll('.shop').forEach(card => {
         card.hidden = i !== 0 && card.dataset.category !== c;
       });
@@ -64,7 +75,9 @@ fetch('data/shops.json')
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(shops => {
     if (listEl) {
-      listEl.replaceChildren(...shops.map(renderShop));
+      listEl.replaceChildren(...(shops.length
+        ? shops.map(renderShop)
+        : [el('p', '', '出展情報は準備中です。')]));
       setupFilters(shops);
     }
     if (clubEl) {
