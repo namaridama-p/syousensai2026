@@ -84,8 +84,12 @@ window.SHOSENSAI = {
       status = `開催中（〜${hm(st.day.close)}）`;
       message = `ただいま開催中です！ 本日は ${hm(st.day.close)} まで。`;
     } else if (st.phase === 'between') {
-      status = `${st.day.label} ${hm(st.day.open)} 開場`;
-      message = `本日の公開は終了しました。${st.day.label}は ${hm(st.day.open)} からです。`;
+      // 次の開催日の朝（開場前）と、前日の閉場後とで案内を分ける
+      const isToday = FEST.todayNo(now) === st.day.day;
+      status = isToday ? `本日 ${hm(st.day.open)} 開場` : `${st.day.label} ${hm(st.day.open)} 開場`;
+      message = isToday
+        ? `本日は ${hm(st.day.open)} から公開します。`
+        : `本日の公開は終了しました。${st.day.label}は ${hm(st.day.open)} からです。`;
     } else {
       status = '';
       message = '第56回 商船祭は終了しました。ご来場ありがとうございました。';

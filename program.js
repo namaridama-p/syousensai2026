@@ -126,8 +126,11 @@
           currentCat, v => { currentCat = v; });
       }
       render();
-      // 開催日は 1 分ごとに「いま開催中」を更新する（一覧の中を操作している間は待つ）
-      if (today) setInterval(() => { if (!listEl.contains(document.activeElement)) render(); }, 60000);
+      // 開催日は 1 分ごとに「いま開催中」を更新する（前日から開いたままでも、日付が変われば更新が始まる。
+      // 一覧の中を操作している間は待つ）
+      setInterval(() => {
+        if (FEST.todayNo() && !listEl.contains(document.activeElement)) render();
+      }, 60000);
     })
     .catch(() => {
       listEl.replaceChildren(el('p', 'empty-box', '企画の情報を読み込めませんでした。（data/events.json の書き方を確認してください）'));

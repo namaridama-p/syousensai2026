@@ -577,6 +577,8 @@ a.cat-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(-
   color: #fff; font-weight: 700; text-decoration: none;
 }
 .x-link:hover { text-decoration: underline; }
+/* 暗い背景の上では、フォーカス枠を白にして見えやすくする */
+.site-footer :focus-visible, .band :focus-visible { outline-color: #fff; }
 
 /* ---------- スクロールで表示（script.js が .js / .is-visible を付ける） ---------- */
 .js [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
