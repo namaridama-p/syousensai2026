@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <!--
+    国際信号旗（International Code of Signals）のスプライト。
+    使い方: <svg viewBox="0 0 60 50"><use href="images/flags.svg#flag-U"/></svg>
+    文字旗は 60×50、数字旗（ペナント）も同じ枠に収めています。
+  -->
+  <defs>
+    <symbol id="flag-C" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#1d4f9c"/>
+      <rect y="10" width="60" height="30" fill="#fff"/>
+      <rect y="20" width="60" height="10" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-D" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#f5c33b"/>
+      <rect y="12.5" width="60" height="25" fill="#1d4f9c"/>
+    </symbol>
+    <symbol id="flag-E" viewBox="0 0 60 50">
+      <rect width="60" height="25" fill="#1d4f9c"/>
+      <rect y="25" width="60" height="25" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-H" viewBox="0 0 60 50">
+      <rect width="30" height="50" fill="#fff"/>
+      <rect x="30" width="30" height="50" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-I" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#f5c33b"/>
+      <circle cx="30" cy="25" r="12.5" fill="#161616"/>
+    </symbol>
+    <symbol id="flag-J" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#1d4f9c"/>
+      <rect y="16.67" width="60" height="16.66" fill="#fff"/>
+    </symbol>
+    <symbol id="flag-K" viewBox="0 0 60 50">
+      <rect width="30" height="50" fill="#f5c33b"/>
+      <rect x="30" width="30" height="50" fill="#1d4f9c"/>
+    </symbol>
+    <symbol id="flag-P" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#1d4f9c"/>
+      <rect x="20" y="16.5" width="20" height="17" fill="#fff"/>
+    </symbol>
+    <symbol id="flag-S" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#fff"/>
+      <rect x="20" y="16.5" width="20" height="17" fill="#1d4f9c"/>
+    </symbol>
+    <symbol id="flag-T" viewBox="0 0 60 50">
+      <rect width="20" height="50" fill="#d3282f"/>
+      <rect x="20" width="20" height="50" fill="#fff"/>
+      <rect x="40" width="20" height="50" fill="#1d4f9c"/>
+    </symbol>
+    <symbol id="flag-U" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#fff"/>
+      <rect width="30" height="25" fill="#d3282f"/>
+      <rect x="30" y="25" width="30" height="25" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-W" viewBox="0 0 60 50">
+      <rect width="60" height="50" fill="#1d4f9c"/>
+      <rect x="10" y="8" width="40" height="34" fill="#fff"/>
+      <rect x="18" y="16" width="24" height="18" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-1" viewBox="0 0 60 50">
+      <polygon points="0,0 60,17 60,33 0,50" fill="#fff"/>
+      <circle cx="19" cy="25" r="9" fill="#d3282f"/>
+    </symbol>
+    <symbol id="flag-2" viewBox="0 0 60 50">
+      <polygon points="0,0 60,17 60,33 0,50" fill="#1d4f9c"/>
+      <circle cx="19" cy="25" r="9" fill="#fff"/>
+    </symbol>
+    <symbol id="flag-3" viewBox="0 0 60 50">
+      <polygon points="0,0 20,5.67 20,44.33 0,50" fill="#d3282f"/>
+      <polygon points="20,5.67 40,11.33 40,38.67 20,44.33" fill="#fff"/>
+      <polygon points="40,11.33 60,17 60,33 40,38.67" fill="#1d4f9c"/>
+    </symbol>
+  </defs>
+</svg>

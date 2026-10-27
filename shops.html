@@ -3,69 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>模擬店一覧 | 商船祭2026</title>
-  <meta name="description" content="商船祭2026の模擬店・出展の一覧。メニューや価格、場所を掲載しています。">
-  <meta name="theme-color" content="#121416">
-  <meta name="color-scheme" content="dark">
+  <title>模擬店・出展 | 第56回 商船祭「結実」</title>
+  <meta name="description" content="第56回 商船祭の模擬店・出展の一覧。メニューや価格、場所、売り切れ情報を掲載しています。">
+  <meta name="theme-color" content="#f4f2ec">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="第56回 商船祭 公式サイト">
+  <meta property="og:title" content="模擬店・出展 | 第56回 商船祭「結実」">
+  <meta property="og:url" content="https://namaridama-p.github.io/syousensai2026/shops.html">
+  <meta property="og:image" content="https://namaridama-p.github.io/syousensai2026/images/ogp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaisei+Tokumin:wght@800&family=Reggae+One&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
-<body class="subpage">
-  <a class="skip" href="#shops">本文へスキップ</a>
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
 
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="商船祭2026 トップへ">
-      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12.00,0.50 12.92,9.78 16.95,7.05 14.22,11.08 23.50,12.00 14.22,12.92 16.95,16.95 12.92,14.22 12.00,23.50 11.08,14.22 7.05,16.95 9.78,12.92 0.50,12.00 9.78,11.08 7.05,7.05 11.08,9.78"/></svg>
-      <span class="logo-text">商船祭<span>2026</span></span>
+    <a class="logo" href="index.html" aria-label="第56回 商船祭 トップへ">
+      <img src="images/emblem.webp" width="38" height="38" alt="">
+      <span class="logo-text"><b>商船祭</b><small>56th · 2026</small></span>
     </a>
+    <p class="status" data-festival-status></p>
     <button class="menu-btn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span><span></span></button>
     <nav class="nav" id="global-nav" aria-label="サイト内">
-      <a href="index.html#about"><span class="en" aria-hidden="true">About</span>商船祭とは</a>
-      <a href="index.html#schedule"><span class="en" aria-hidden="true">Schedule</span>スケジュール</a>
-      <a href="index.html#events"><span class="en" aria-hidden="true">Program</span>企画</a>
-      <a href="index.html#clubs"><span class="en" aria-hidden="true">Clubs</span>部活動出展</a>
+      <a href="index.html"><span class="en" aria-hidden="true">Top</span>トップ</a>
+      <a href="about.html"><span class="en" aria-hidden="true">About</span>商船祭とは</a>
+      <a href="program.html"><span class="en" aria-hidden="true">Program</span>企画</a>
       <a href="shops.html" aria-current="page"><span class="en" aria-hidden="true">Shops</span>模擬店</a>
-      <a href="index.html#access"><span class="en" aria-hidden="true">Access</span>アクセス</a>
-      <a href="index.html#contact"><span class="en" aria-hidden="true">Contact</span>お問い合わせ</a>
+      <a href="access.html"><span class="en" aria-hidden="true">Access</span>アクセス</a>
+      <a href="info.html"><span class="en" aria-hidden="true">Guide</span>来場案内</a>
     </nav>
   </header>
 
-  <main class="page-top">
-    <section class="section" id="shops">
-      <header class="section-head">
-        <p class="section-no">—</p>
-        <p class="section-en">Shops</p>
-        <h1 class="page-title">模擬店一覧</h1>
-      </header>
-      <div class="filters" id="filters"></div>
-      <div class="cards three" id="shop-list">
-        <p>読み込み中…</p>
+  <main id="main">
+    <header class="page-hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/hero/sea-1280.webp" srcset="images/hero/sea-800.webp 800w, images/hero/sea-1280.webp 1280w" sizes="100vw" width="1280" height="720" alt="">
+      </div>
+      <svg class="puzzle" data-puzzle="page" data-seed="22" aria-hidden="true" focusable="false"></svg>
+      <div class="page-hero-inner" data-puzzle-keep>
+        <p class="page-en">Shops</p>
+        <h1 class="page-title">模擬店・出展</h1>
+      </div>
+    </header>
+
+    <section class="section" aria-label="出展の一覧">
+      <div class="inner">
+        <p class="sec-lead" style="margin-bottom: 28px">さまざまな模擬店や、体験ができるお店が並びます。種類のボタンで絞り込めます。</p>
+        <div class="filters" id="shop-filters"></div>
+        <p class="note" id="shop-count" aria-live="polite" style="margin-bottom: 14px"></p>
+        <div class="grid three" id="shop-list"><p class="cards-empty empty-box">読み込み中…</p></div>
+        <p class="note" style="margin-top: 24px">※ 売り切れた商品には「売り切れ」と表示します。表示が実際と異なる場合もありますので、ご了承ください。</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
+    <div class="bunting" data-flags="K E T S U J I T S U" aria-hidden="true"></div>
     <div class="footer-inner">
-      <p class="footer-mark" aria-hidden="true">
-        <svg class="mark" viewBox="0 0 24 24"><polygon points="12.00,0.50 12.92,9.78 16.95,7.05 14.22,11.08 23.50,12.00 14.22,12.92 16.95,16.95 12.92,14.22 12.00,23.50 11.08,14.22 7.05,16.95 9.78,12.92 0.50,12.00 9.78,11.08 7.05,7.05 11.08,9.78"/></svg>
-        Shosen-sai 2026
-      </p>
-      <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
-      <p class="credit">
-        Web制作：namaridama_p
-        <a class="x-link" href="https://x.com/namaridama_p" target="_blank" rel="noopener noreferrer" aria-label="namaridama_pのX">𝕏</a>
-        <span class="credit-sep" aria-hidden="true">/</span>
-        t_okugawa
-        <a class="x-link" href="https://x.com/toma_okugawa" target="_blank" rel="noopener noreferrer" aria-label="t_okugawaのX">𝕏</a>
-      </p>
+      <div class="footer-brand">
+        <span class="footer-emblem"><img src="images/emblem.webp" width="48" height="48" alt=""></span>
+        <p class="footer-title">第56回 商船祭<span>結実</span></p>
+        <p class="footer-date">2026.11.7 SAT — 11.8 SUN</p>
+      </div>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="index.html">トップ</a>
+        <a href="about.html">商船祭とは</a>
+        <a href="program.html">企画</a>
+        <a href="shops.html">模擬店</a>
+        <a href="access.html">アクセス</a>
+        <a href="info.html">来場案内</a>
+      </nav>
+      <div class="footer-meta">
+        <p>上の旗は国際信号旗です。左から K・E・T・S・U・J・I・T・S・U で「KETSUJITSU（結実）」と読めます。</p>
+        <p>海の画像は、生成AI（Grok Imagine）で作成したイメージです。</p>
+        <p>&copy; 2026 商船祭実行委員会 / 弓削商船高等専門学校</p>
+        <p class="credit">
+          Web制作：namaridama_p
+          <a class="x-link" href="https://x.com/namaridama_p" target="_blank" rel="noopener noreferrer" aria-label="namaridama_pのX">𝕏</a>
+          <span class="credit-sep" aria-hidden="true">/</span>
+          t_okugawa
+          <a class="x-link" href="https://x.com/toma_okugawa" target="_blank" rel="noopener noreferrer" aria-label="t_okugawaのX">𝕏</a>
+        </p>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script src="shops.js"></script>
+  <nav class="tabbar" aria-label="よく使うページ">
+    <a href="program.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>企画</a>
+    <a href="shops.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5z"/><path d="M5 9v11h14V9"/><path d="M10 20v-5h4v5"/></svg>模擬店</a>
+    <a href="access.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14h18l-2.5 5h-13z"/><path d="M6 14V9h12v5"/><path d="M9 9V6h6v3"/></svg>アクセス</a>
+    <a href="info.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>案内</a>
+  </nav>
+
+  <script type="speculationrules">
+  { "prefetch": [{ "where": { "selector_matches": ".nav a, .tabbar a" }, "eagerness": "moderate" }] }
+  </script>
+  <script src="script.js?v=5" defer></script>
+  <script src="shops.js?v=5" defer></script>
 </body>
 </html>
