@@ -1,17 +1,291 @@
 [
   {
-    "name": "（サンプル）ゲーム展示",
-    "organization": "マイコン部",
-    "category": "体験",
+    "name": "柔道部",
+    "organization": "柔道部",
+    "category": "食べ物",
     "club": true,
-    "place": "情報工学科棟2F 情報処理演習室",
-    "summary": "弓削商船のエースプログラマーが作った作品です。",
+    "place": "",
+    "summary": "わたあめ",
     "menu": [
-      { "name": "ゲームクレジット", "price": 100},
-      { "name": "（サンプル）限定ステッカー", "price": 200, "soldOut": true }
+      {
+        "name": "わたあめ 1色",
+        "price": 100
+      },
+      {
+        "name": "わたあめ 2色",
+        "price": 150
+      }
     ],
-    "allergens": "",
+    "allergens": [],
+    "image": "images/shops/judo.png",
+    "comment": ""
+  },
+  {
+    "name": "ソフトテニス部",
+    "organization": "ソフトテニス部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "トッポギ",
+    "menu": [
+      {
+        "name": "トッポギ",
+        "price": 300
+      },
+      {
+        "name": "チーズトッピング",
+        "price": 50,
+        "note": "トッピング"
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/soft-tennis.png",
+    "comment": ""
+  },
+  {
+    "name": "SCIENCE CAFE",
+    "organization": "科学実験同好会",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "1日200食限定でカレーを販売しています。カレーと飲み物セットで600円です！",
+    "menu": [
+      {
+        "name": "カレー",
+        "price": 500
+      },
+      {
+        "name": "コーヒー",
+        "price": 130
+      },
+      {
+        "name": "ソフトドリンク",
+        "price": 130,
+        "note": "三ツ矢サイダー、オレンジジュース、リンゴジュース、コカ・コーラ"
+      },
+      {
+        "name": "実験粉ラムネ",
+        "price": 50
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/science-cafe.png",
+    "comment": "ぜひご来店ください！"
+  },
+  {
+    "name": "射的",
+    "organization": "マイコン部",
+    "category": "ゲーム",
+    "club": true,
+    "place": "情報工学科棟 2階 演習室",
+    "summary": "射的",
+    "menu": [
+      {
+        "name": "コルク5発",
+        "price": 300
+      }
+    ],
+    "allergens": [],
     "image": "images/shops/micon.png",
-    "comment": "ぜひ遊びにきてください！"
+    "comment": "遊びにきてね"
+  },
+  {
+    "name": "eスポーツ同好会",
+    "organization": "eスポーツ同好会",
+    "category": "ゲーム",
+    "club": true,
+    "place": "",
+    "summary": "１．スタッフ対客の一体一でゲームで戦い勝ったら景品がもらえる\n２．スマブラの大会を開き優勝者は景品がもらえる",
+    "menu": [
+      {
+        "name": "一ゲーム",
+        "price": 200
+      },
+      {
+        "name": "大会参加",
+        "price": 300
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/esports.png",
+    "comment": ""
+  },
+  {
+    "name": "ケバブチップス",
+    "organization": "ラグビー部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "ポテチに肉と野菜を乗せて売っています",
+    "menu": [
+      {
+        "name": "ケバブチップス",
+        "price": 800
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/kebab-chips.png",
+    "comment": ""
+  },
+  {
+    "name": "弓道体験",
+    "organization": "弓道部",
+    "category": "ゲーム",
+    "club": true,
+    "place": "",
+    "summary": "弓道を体験してもらい、的にあたった数だけ商品をあげる内容",
+    "menu": [],
+    "allergens": [],
+    "image": "images/shops/kyudo.png",
+    "comment": ""
+  },
+  {
+    "name": "剣道部",
+    "organization": "剣道部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "焼きそば・ジュースの販売",
+    "menu": [
+      {
+        "name": "焼きそば",
+        "price": 300
+      },
+      {
+        "name": "ジュース",
+        "price": 150
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/kendo.png",
+    "comment": ""
+  },
+  {
+    "name": "野球部",
+    "organization": "野球部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "豚串、いか串",
+    "menu": [
+      {
+        "name": "豚串",
+        "price": 500
+      },
+      {
+        "name": "イカ串",
+        "price": 400
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/baseball.png",
+    "comment": ""
+  },
+  {
+    "name": "卓球部",
+    "organization": "卓球部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "卓球部のみんなで丁寧に作ったたこ焼きです！",
+    "menu": [
+      {
+        "name": "たこ焼き",
+        "price": 400
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/table-tennis.png",
+    "comment": "ぜひ来てください！"
+  },
+  {
+    "name": "陸上競技部",
+    "organization": "陸上競技部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "お好み焼きとわたあめ",
+    "menu": [
+      {
+        "name": "お好み焼き",
+        "price": 350
+      },
+      {
+        "name": "わたがし",
+        "price": 100
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/track-and-field.png",
+    "comment": ""
+  },
+  {
+    "name": "バドミントン部",
+    "organization": "バドミントン部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "バドミントン部です！毎年大行列の『からあげ』今年もやります！",
+    "menu": [
+      {
+        "name": "からあげ",
+        "price": 300
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/badminton.png",
+    "comment": "ぜひ来てください！"
+  },
+  {
+    "name": "ロボット展示、操縦体験",
+    "organization": "ロボット研究部",
+    "category": "展示",
+    "club": true,
+    "place": "",
+    "summary": "高専ロボコンのロボット展示、体験",
+    "menu": [
+      {
+        "name": "募金箱の設置",
+        "price": 0,
+        "note": "来年の高専ロボコンの活動費用に使わせていただきます"
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/robot.jpg",
+    "comment": ""
+  },
+  {
+    "name": "バスケットボール部",
+    "organization": "バスケットボール部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "うどん",
+    "menu": [
+      {
+        "name": "うどん",
+        "price": 400
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/basketball.png",
+    "comment": ""
+  },
+  {
+    "name": "カッター部",
+    "organization": "カッター部",
+    "category": "食べ物",
+    "club": true,
+    "place": "",
+    "summary": "とんぺい焼き",
+    "menu": [
+      {
+        "name": "とんぺい焼き",
+        "price": 450
+      }
+    ],
+    "allergens": [],
+    "image": "images/shops/cutter.png",
+    "comment": ""
   }
 ]
