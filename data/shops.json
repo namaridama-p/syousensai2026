@@ -17,7 +17,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/judo.png",
+    "image": "images/shops/judo.webp",
     "comment": ""
   },
   {
@@ -39,7 +39,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/soft-tennis.png",
+    "image": "images/shops/soft-tennis.webp",
     "comment": ""
   },
   {
@@ -69,7 +69,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/science-cafe.png",
+    "image": "images/shops/science-cafe.webp",
     "comment": "ぜひご来店ください！"
   },
   {
@@ -86,7 +86,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/micon.png",
+    "image": "images/shops/micon.webp",
     "comment": "遊びにきてね"
   },
   {
@@ -107,7 +107,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/esports.png",
+    "image": "images/shops/esports.webp",
     "comment": ""
   },
   {
@@ -124,7 +124,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/kebab-chips.png",
+    "image": "images/shops/kebab-chips.webp",
     "comment": ""
   },
   {
@@ -136,7 +136,7 @@
     "summary": "弓道を体験してもらい、的にあたった数だけ商品をあげる内容",
     "menu": [],
     "allergens": [],
-    "image": "images/shops/kyudo.png",
+    "image": "images/shops/kyudo.webp",
     "comment": ""
   },
   {
@@ -157,7 +157,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/kendo.png",
+    "image": "images/shops/kendo.webp",
     "comment": ""
   },
   {
@@ -178,7 +178,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/baseball.png",
+    "image": "images/shops/baseball.webp",
     "comment": ""
   },
   {
@@ -195,7 +195,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/table-tennis.png",
+    "image": "images/shops/table-tennis.webp",
     "comment": "ぜひ来てください！"
   },
   {
@@ -216,7 +216,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/track-and-field.png",
+    "image": "images/shops/track-and-field.webp",
     "comment": ""
   },
   {
@@ -233,7 +233,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/badminton.png",
+    "image": "images/shops/badminton.webp",
     "comment": "ぜひ来てください！"
   },
   {
@@ -251,7 +251,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/robot.jpg",
+    "image": "images/shops/robot.webp",
     "comment": ""
   },
   {
@@ -268,7 +268,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/basketball.png",
+    "image": "images/shops/basketball.webp",
     "comment": ""
   },
   {
@@ -285,7 +285,7 @@
       }
     ],
     "allergens": [],
-    "image": "images/shops/cutter.png",
+    "image": "images/shops/cutter.webp",
     "comment": ""
   }
 ]
