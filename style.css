@@ -469,7 +469,7 @@ a.cat-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(-
    模擬店（shops.js が生成）
    ========================================================= */
 .shop { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.shop-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: var(--border); background: var(--paper-2); }
+.shop-img { display: block; width: 100%; aspect-ratio: 147.46 / 69.27; object-fit: cover; border-bottom: var(--border); background: var(--paper-2); }
 .shop-body { padding: 18px 20px 22px; }
 .shop-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .shop h3 { margin-top: 10px; font-size: 1.2rem; }
