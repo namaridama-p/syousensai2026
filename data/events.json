@@ -33,24 +33,87 @@
     "link": "https://www.yuge.ac.jp/public/chair_r8koza04"
   },
   {
-    "title": "軽音部ライブ",
-    "category": "ライブ",
-    "day": "",
-    "start": "",
-    "end": "",
-    "place": "",
-    "organization": "軽音部",
-    "summary": "軽音部のライブを行います。"
+    "title": "響かせろ！魂の一曲（のど自慢）",
+    "category": "ステージ",
+    "day": 1,
+    "start": "10:00",
+    "end": "11:00",
+    "place": "ステージ"
   },
   {
-    "title": "吹奏楽部の演奏",
+    "title": "一流にふさわしいのは誰だ（格付け大会）",
+    "category": "ステージ",
+    "day": 1,
+    "start": "11:00",
+    "end": "12:00",
+    "place": "ステージ"
+  },
+  {
+    "title": "弓削丸について深く知ろう",
+    "category": "ステージ",
+    "day": 1,
+    "start": "13:30",
+    "end": "14:00",
+    "place": "ステージ"
+  },
+  {
+    "title": "筋肉は正義、敗者は現実（腕相撲）",
+    "category": "ステージ",
+    "day": 1,
+    "start": "14:30",
+    "end": "15:00",
+    "place": "ステージ"
+  },
+  {
+    "title": "その姿、もはや別人（コスプレ大会）",
+    "category": "ステージ",
+    "day": 1,
+    "start": "15:00",
+    "end": "16:00",
+    "place": "ステージ"
+  },
+  {
+    "title": "軽音ライブ",
     "category": "ライブ",
-    "day": "",
-    "start": "",
-    "end": "",
-    "place": "",
-    "organization": "吹奏楽部",
-    "summary": "吹奏楽部の演奏を行います。"
+    "day": 1,
+    "start": "16:30",
+    "end": "17:00",
+    "place": "ステージ",
+    "organization": "軽音部"
+  },
+  {
+    "title": "吹奏楽部演奏",
+    "category": "ライブ",
+    "day": 2,
+    "start": "10:00",
+    "end": "10:30",
+    "place": "ステージ",
+    "organization": "吹奏楽部"
+  },
+  {
+    "title": "食べる早さは青春の速さ（早食い）",
+    "category": "ステージ",
+    "day": 2,
+    "start": "11:00",
+    "end": "12:00",
+    "place": "ステージ"
+  },
+  {
+    "title": "軽音ライブ",
+    "category": "ライブ",
+    "day": 2,
+    "start": "12:00",
+    "end": "14:00",
+    "place": "ステージ",
+    "organization": "軽音部"
+  },
+  {
+    "title": "抽選会",
+    "category": "ステージ",
+    "day": 2,
+    "start": "14:30",
+    "end": "15:30",
+    "place": "ステージ"
   },
   {
     "title": "オープンキャンパス",
