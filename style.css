@@ -485,7 +485,6 @@ a.cat-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(-
   background: var(--red); color: #fff; font-size: .72rem; font-style: normal; font-weight: 700; line-height: 1.8;
   text-decoration: none; vertical-align: 1px;
 }
-.shop .allergen { margin-top: 10px; font-size: .84rem; color: var(--ink-soft); }
 .shop .comment { margin-top: 10px; padding: 8px 12px; border-radius: 10px; background: var(--green-soft); font-size: .9rem; }
 .shop[hidden] { display: none; }
 .cards-empty { grid-column: 1 / -1; }

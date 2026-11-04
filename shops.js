@@ -51,7 +51,6 @@
       });
       body.append(ul);
     }
-    if (s.allergens) body.append(el('p', 'allergen', `アレルギー：${s.allergens}`));
     if (s.comment) body.append(el('p', 'comment', s.comment));
     card.append(body);
     return card;
