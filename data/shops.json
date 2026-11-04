@@ -17,7 +17,6 @@
         "note": "トッピング"
       }
     ],
-    "allergens": [],
     "image": "images/shops/soft-tennis.webp",
     "comment": ""
   },
@@ -47,7 +46,6 @@
         "price": 50
       }
     ],
-    "allergens": [],
     "image": "images/shops/science-cafe.webp",
     "comment": "ぜひご来店ください！"
   },
@@ -64,7 +62,6 @@
         "price": 300
       }
     ],
-    "allergens": [],
     "image": "images/shops/micon.webp",
     "comment": "遊びにきてね"
   },
@@ -85,7 +82,6 @@
         "price": 300
       }
     ],
-    "allergens": [],
     "image": "images/shops/esports.webp",
     "comment": ""
   },
@@ -102,7 +98,6 @@
         "price": 800
       }
     ],
-    "allergens": [],
     "image": "images/shops/kebab-chips.webp",
     "comment": ""
   },
@@ -114,7 +109,6 @@
     "place": "",
     "summary": "弓道を体験できます。的に当てた数に応じて景品がもらえます！",
     "menu": [],
-    "allergens": [],
     "image": "images/shops/kyudo.webp",
     "comment": ""
   },
@@ -135,7 +129,6 @@
         "price": 150
       }
     ],
-    "allergens": [],
     "image": "images/shops/kendo.webp",
     "comment": ""
   },
@@ -156,7 +149,6 @@
         "price": 400
       }
     ],
-    "allergens": [],
     "image": "images/shops/baseball.webp",
     "comment": ""
   },
@@ -173,7 +165,6 @@
         "price": 400
       }
     ],
-    "allergens": [],
     "image": "images/shops/table-tennis.webp",
     "comment": "ぜひ来てください！"
   },
@@ -194,7 +185,6 @@
         "price": 100
       }
     ],
-    "allergens": [],
     "image": "images/shops/track-and-field.webp",
     "comment": ""
   },
@@ -211,7 +201,6 @@
         "price": 300
       }
     ],
-    "allergens": [],
     "image": "images/shops/badminton.webp",
     "comment": "ぜひ来てください！"
   },
@@ -229,7 +218,6 @@
         "note": "来年の高専ロボコンの活動費用に使わせていただきます"
       }
     ],
-    "allergens": [],
     "image": "images/shops/robot.webp",
     "comment": ""
   },
@@ -246,7 +234,6 @@
         "price": 400
       }
     ],
-    "allergens": [],
     "image": "images/shops/basketball.webp",
     "comment": ""
   },
@@ -263,7 +250,6 @@
         "price": 450
       }
     ],
-    "allergens": [],
     "image": "images/shops/cutter.webp",
     "comment": ""
   }
